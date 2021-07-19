@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var result_one = (10 + 10 + "10");
+		var result_two = (10 + "10" + 10);
+		var result_three = (10 + 10 + +"10");
+		var result_four = (10 / -"");
+		var result_five = (10 / +"2.5");
+		console.log(result_one);
+		console.log(result_two);
+		console.log(result_three);
+		console.log(result_four);
+		console.log(result_five);
+		/*
+		1. к 10 прибавляем 10, получаем 20
+		2. к 20 прибавляем строку "10", получаем 2010
+		3. 2010 присваиваем в переменную result_one
+		4. к 10 прибавляем строку "10", получаем строку 1010
+		5. к строке 1010 прибавляем 10, получаем 101010
+		6. 101010 присваеваем в переменную result_two
+		7. к 10 прибавляем 10, получаем 20
+		8. к 20 прибавляем строку "10", преобразованную в число, (т.е. 10), получаем 30
+		9. 30 присваеваем в переменную result_three
+		10. 10 делим на -0, получаем -Infinity
+		11. -Infinity присваеваем в переменную result_four
+		12. 10 делим на NaN, полученный потому, что дробные числа записываются через точку, а не запятую (следовательно, операция +"2,5" выдает ошибку), получаем NaN
+		13. NaN присваеваем в переменную result_five
+		14. с помощью console.log выводим result_one/_two/_three/_four/_five в консоль
+		*/
+	</script>
+</body>
+</html>
