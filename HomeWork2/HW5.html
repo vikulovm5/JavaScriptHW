@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script>
+		
+		function summary(num_one, num_two){
+			return num_one + num_two
+		}
+
+		function diff(min, sub){
+			return min - sub
+		}
+
+		function multiply(factor_one, factor_two){
+			return factor_one * factor_two
+		}
+
+		function division(dividend, divider){
+			return dividend / divider
+		}
+
+		function mathOperation(arg1, arg2, operation){
+			switch(operation){
+				case 'сложение':
+					return summary(arg1, arg2);
+					break
+				case 'вычитание':
+					return diff(arg1, arg2);
+					break
+				case 'умножение':
+					return multiply(arg1, arg2);
+					break
+				case 'деление':
+					return division(arg1, arg2);
+					break
+				default:
+					return('Введите данные корректно')
+					break
+			}
+		}
+
+		alert(mathOperation(10, 20, 'сложение'));
+		alert(mathOperation(15, 5, 'вычитание'));
+		alert(mathOperation(24, 12, 'деление'));
+		alert(mathOperation(8, 7, 'умножение'));
+		alert(mathOperation(43, 9, 'степень'))
+
+	</script>
+</body>
+</html>
